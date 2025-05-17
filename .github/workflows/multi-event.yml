@@ -1,0 +1,12 @@
+name: Multi Event
+on:
+  push:
+    branches:
+      - main
+jobs:
+  first_event:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello World
+        run: echo "Hello World"
+    
