@@ -1,9 +1,8 @@
 name: cron schedule exemple
-
 on:
   schedule:
-    - corn: '30 5 * * 1,3'
-    - corn: '30 5 * * 2,4'
+    - cron: '30 5 * * 1,3'
+    - cron: '30 5 * * 2,4'
 
 jobs:
   test_schedule:
