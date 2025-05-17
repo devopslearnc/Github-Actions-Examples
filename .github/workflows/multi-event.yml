@@ -9,10 +9,15 @@ jobs:
     steps:
       - name: Hello World
         run: echo "Hello World"
-      - name: Multiple echo stmts
-        run: |
-          echo "REF: $GITHUB_REF"
-          echo "Job ID: $GITHUB_JOB"
-          echo "Action: $GITHUB_ACTION"
-          echo "Actor: $GITHUB_ACTOR"
+
+  second_event:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Multiple echo stmts
+      run: |
+        echo "REF: $GITHUB_REF"
+        echo "Job ID: $GITHUB_JOB"
+        echo "Action: $GITHUB_ACTION"
+        echo "Actor: $GITHUB_ACTOR"
+      
     
