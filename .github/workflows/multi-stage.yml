@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: check the dev
-        run: echo "matched to dev branch"
+        run: echo "matched to dev branch date"
