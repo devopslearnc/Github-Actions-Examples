@@ -23,5 +23,11 @@ jobs:
         echo "Job ID: $GITHUB_JOB"
         echo "Action: $GITHUB_ACTION"
         echo "Actor: $GITHUB_ACTOR"
-      
+
+
+  third_event:
+    runs-on: ubuntu-latest
+    steps:
+      - name: third event
+        run: echo "$(date)"
     
