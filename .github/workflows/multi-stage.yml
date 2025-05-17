@@ -1,0 +1,14 @@
+name: Multi Stage
+on:
+  push:
+    branches:
+      - dev
+  pull_request:
+    branches:
+      - main
+jobs:
+  push_event_check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check the dev
+        run: echo "matched to dev branch"
