@@ -88,3 +88,9 @@ jobs:
     needs: sonar-quality-gate
     steps:
       - uses: actions/checkout@v4
+
+  buils_docker_image_and_pushh:
+    runs-on: ubuntu-latest
+    needs: buils_docker_image_and_push
+    steps:
+      - uses: actions/checkout@v4
