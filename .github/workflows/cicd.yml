@@ -83,3 +83,9 @@ jobs:
             -Dsonar.projectKey=your-org_your-repo \
             -Dsonar.host.url=https://sonarcloud.io \
             -Dsonar.login=$SONAR_TOKEN
+
+      - name: SonarCloud Quality Gate
+        uses: SonarSource/sonarcloud-github-action@master
+        with:
+          args: >
+            bash <(curl -s https://raw.githubusercontent.com/SonarSource/sonarcloud-github-action/master/entrypoint.sh)
