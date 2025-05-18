@@ -51,11 +51,11 @@ jobs:
       - name: Run tests
         run: npm test -- --ci --reporter=jest-junit
 
-      - name: Upload test report
-        uses: actions/upload-artifact@v3
-        with:
-          name: test-results
-          path: junit.xml
+#      - name: Upload test report
+#        uses: actions/upload-artifact@v3
+#        with:
+#          name: test-results
+#          path: junit.xml
 
       - name: Build application
         run: npm run build
