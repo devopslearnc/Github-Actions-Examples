@@ -66,6 +66,14 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
+      - name: Install SonarScanner CLI
+        run: |
+          # download and unpack
+          wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.8.0.2856-linux.zip
+          unzip sonar-scanner-cli-4.8.0.2856-linux.zip
+          # add to PATH
+          echo "::add-path::${{ runner.workspace }}/sonar-scanner-4.8.0.2856-linux/bin"
+
       - name: Cache SonarCloud packages
         uses: actions/cache@v3
         with:
