@@ -5,10 +5,10 @@ on:
       - dev
   pull_request:
     branches:
-      - main
+      - dev
 jobs:
   push_event_check:
     runs-on: ubuntu-latest
     steps:
       - name: check the dev
-        run: echo "matched to dev branch"
+        run: echo "matched to dev branch date"
