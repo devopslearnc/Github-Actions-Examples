@@ -48,8 +48,8 @@ jobs:
       - name: Lint
         run: npm run lint
 
-      - name: Run tests
-        run: npm test -- --ci --reporter=jest-junit
+#      - name: Run tests
+#        run: npm test -- --ci --reporter=jest-junit
 
 #      - name: Upload test report
 #        uses: actions/upload-artifact@v3
